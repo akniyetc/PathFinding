@@ -34,14 +34,14 @@ public class PathFindingSymbol extends BaseMapSymbol {
 
         canvas.save();
 
-        /*for (int i = 0; i < mPixelList.size() - 1; i++) {
+        for (int i = 0; i < mPixelList.size() - 1; i++) {
 
-            *//*float[] locationValue = new float[]{(float) mPixelList.get(i).getХ(),
+            /*float[] locationValue = new float[]{(float) mPixelList.get(i).getХ(),
                     (float) mPixelList.get(i).getY()};
             matrix.mapPoints(locationValue);
 
             canvas.drawCircle(locationValue[0], locationValue[1], nodeRadius,
-                    nodePaint);*//*
+                    nodePaint);*/
 
             float[] locationValue = new float[]{(float) mPixelList.get(i).getХ(),
                     (float) mPixelList.get(i).getY()};
@@ -51,7 +51,7 @@ public class PathFindingSymbol extends BaseMapSymbol {
             matrix.mapPoints(locationValue1);
             nodePaint.setStrokeWidth(10);
             canvas.drawLine(locationValue[0], locationValue[1], locationValue1[0], locationValue1[1], nodePaint);
-        }*/
+        }
 
         canvas.restore();
     }

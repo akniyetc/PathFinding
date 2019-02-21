@@ -349,11 +349,8 @@ public class MapView extends RelativeLayout {
                 }
             }
         }
-        long startSeconds = System.currentTimeMillis();
-        List<ExampleNode> nodes = pathFinder.findPath((int) startX, (int) startY, 35, 35);
-        long endSeconds = System.currentTimeMillis();
 
-        Log.d("suka", String.valueOf(endSeconds - startSeconds));
+        List<ExampleNode> nodes = pathFinder.findPath((int) startX, (int) startY, 35, 35);
 
         List<Pixel> pixelList = new ArrayList<>();
         Pixel currentPixel;
